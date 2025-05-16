@@ -8,11 +8,7 @@ dotenv.config();
 const app = express();
 
 // ✅ CORS Middleware
-app.use(cors({
-  origin: 'http://localhost:5173',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // if you're using cookies/auth headers
-}));
+app.use(cors());
 
 // ✅ JSON parser
 app.use(express.json());
